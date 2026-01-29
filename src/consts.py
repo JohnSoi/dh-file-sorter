@@ -1,4 +1,10 @@
+# pylint: disable=too-few-public-methods
+"""Модуль с константами."""
+
+
 class FileTypes:
+    """Класс с типами файлов."""
+
     IMAGE: str = "image"
     VIDEO: str = "video"
     AUDIO: str = "audio"
@@ -14,6 +20,8 @@ class FileTypes:
     OTHER: str = "other"
 
 
+# Карта расширений файлов по типам
+# fmt: off
 FILE_TYPE_EXTENSIONS_MAPPING: dict[str, tuple[str, ...]] = {
     FileTypes.IMAGE: (
         "jpg", "jpeg", "png", "gif", "bmp", "tiff", "tif",
